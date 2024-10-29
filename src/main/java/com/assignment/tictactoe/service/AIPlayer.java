@@ -10,13 +10,13 @@ public class AIPlayer extends Player{
     }
 
     @Override
-    public void move(int row, int col) {
+    public void move(int row, int col) {            //place an O in the specified cell if it s a legal move
         if(board.isLegalMove(row,col)){
             board.updateMove(row,col,Piece.O);
         }
 
     }
-    public void findBestMove(){
+    public void findBestMove(){                     // use the minimax algo to evaluate potential moves and select the optimal one
         int bestValue = Integer.MIN_VALUE;
         int bestRow = -1;
         int bestColumn = -1;
@@ -43,10 +43,10 @@ public class AIPlayer extends Player{
         }
     }
 
-    private int minimax(Piece[][] pieces,int depth , boolean isMaximize){
+    private int minimax(Piece[][] pieces,int depth , boolean isMaximize){     // recursively evaluate the board to assign values to moves
         Winner winner =board.checkWinner();
         if(winner != null){
-            if(winner.getWinningPiece() == Piece.O){
+            if(winner.getWinningPiece() == Piece.O){        // 10-depth for AI win , depth-10 for human win
                 return 10 - depth;
             }else if(winner.getWinningPiece() == Piece.X){
                 return depth - 10;
@@ -82,6 +82,7 @@ public class AIPlayer extends Player{
             }
             return bestValue;
         }
+        // the Ai maximize it s score while the human minimize it
 
     }
 

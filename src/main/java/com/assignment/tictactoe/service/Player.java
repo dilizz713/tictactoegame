@@ -1,8 +1,8 @@
 package com.assignment.tictactoe.service;
 
-//this is for both human and Ai player
+//act as a base class for different players
 public abstract class Player {
-    protected  BoardImpl board;
+    protected  BoardImpl board;         // a reference to the board where moves made
     public  Player(BoardImpl board){
         this.board = board;
 

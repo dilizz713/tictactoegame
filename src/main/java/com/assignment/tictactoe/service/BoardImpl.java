@@ -2,7 +2,7 @@ package com.assignment.tictactoe.service;
 
 import lombok.Getter;
 
-//this is  implements board interface and contains the main board structure
+//implements board and manage the game logic.
 @Getter
 public class BoardImpl implements Board{
     private Piece[][] pieces = new Piece[3][3];
@@ -12,7 +12,7 @@ public class BoardImpl implements Board{
     }
 
     @Override
-    public void initializeBoard() {
+    public void initializeBoard() {                     // reset the board
         pieces = new Piece[3][3];
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -22,17 +22,17 @@ public class BoardImpl implements Board{
     }
 
     @Override
-    public boolean isLegalMove(int row, int column) {
+    public boolean isLegalMove(int row, int column) {           //verify a move is legal
         return pieces[row][column] == Piece.EMPTY;
     }
 
     @Override
-    public void updateMove(int row, int column, Piece piece) {
+    public void updateMove(int row, int column, Piece piece) {      //places X or O on the board in specific location
         pieces[row][column] = piece;
     }
 
     @Override
-    public Winner checkWinner() {
+    public Winner checkWinner() {           // check all rows, cols, diagonals for 3 identical, non empty pieces
         for (int i = 0; i < 3; i++) {
             if (pieces[i][0] != Piece.EMPTY && pieces[i][0] == pieces[i][1] && pieces[i][1] == pieces[i][2]) {
                 return new Winner(pieces[i][0],i,0,i,1,i,2);
@@ -53,7 +53,7 @@ public class BoardImpl implements Board{
     }
 
     @Override
-    public void printBoard() {
+    public void printBoard() {              //display the board in the console. this is helpful for testing
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print(pieces[i][j] + " ");
@@ -62,7 +62,7 @@ public class BoardImpl implements Board{
         }
     }
 
-    public boolean isFull(){
+    public boolean isFull(){                            //check if all cells are filled.
         for (int i = 0; i < pieces.length; i++) {
             for (int j = 0; j < pieces[i].length; j++) {
                 if(pieces[i][j] == Piece.EMPTY){

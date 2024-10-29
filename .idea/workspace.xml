@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0775b71-d052-42e8-83f6-60c5ecd950df" name="Changes" comment="start the implements">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/images/title.jpg" afterDir="false" />
+    <list default="true" id="a0775b71-d052-42e8-83f6-60c5ecd950df" name="Changes" comment="done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/AIPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/AIPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/HumanPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Piece.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Winner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Winner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/view/board-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/board-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +96,7 @@
       <updated>1730131059147</updated>
       <workItem from="1730131060360" duration="7049000" />
       <workItem from="1730181787196" duration="6493000" />
-      <workItem from="1730193151777" duration="3041000" />
+      <workItem from="1730193151777" duration="5869000" />
     </task>
     <task id="LOCAL-00001" summary="start the implements">
       <option name="closed" value="true" />
@@ -120,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730131963507</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="done">
+      <option name="closed" value="true" />
+      <created>1730208119655</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730208119656</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start the implements" />
-    <option name="LAST_COMMIT_MESSAGE" value="start the implements" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
