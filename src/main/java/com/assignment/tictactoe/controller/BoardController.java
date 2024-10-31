@@ -46,7 +46,14 @@ public class BoardController implements BoardUI {
         int row = Character.getNumericValue(id.charAt(3));
         int col = Character.getNumericValue(id.charAt(4));
 
+        if (!board.isLegalMove(row, col)) {
+
+            showError("This position is already taken. Please try another one.");
+            return;
+        }
+
         humanPlayer.move(row , col);
+        board.printBoard();
         updateUI();
 
         if(board.checkWinner() != null){
@@ -117,6 +124,9 @@ public class BoardController implements BoardUI {
         }
 
         btnStart.setStyle("-fx-background-color:  #e8aade; -fx-text-fill: black;");
+
+        System.out.println("Game reset. Starting a  new game!");
+        board.printBoard();
     }
 
     private void showError(String msg){

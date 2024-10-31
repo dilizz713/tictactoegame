@@ -25,11 +25,11 @@ public class AIPlayer extends Player{
         for (int i = 0; i < pieces.length; i++) {
             for (int j = 0; j < pieces[i].length; j++) {
                 if(pieces[i][j] == Piece.EMPTY){
-                    pieces[i][j] = Piece.O;
+                    pieces[i][j] = Piece.O;             //make a temporary move
                     int moveValue = minimax(pieces,0,false);
-                    pieces[i][j] = Piece.EMPTY;
+                    pieces[i][j] = Piece.EMPTY;         //undo the move
 
-                    if(moveValue > bestValue){
+                    if(moveValue > bestValue){          //select move with the highest score
                         bestRow = i;
                         bestColumn = j;
                         bestValue = moveValue;
@@ -39,7 +39,8 @@ public class AIPlayer extends Player{
         }
 
         if(bestRow != -1 && bestColumn != -1){
-            move(bestRow,bestColumn);
+            board.updateMove(bestRow,bestColumn,Piece.O);
+            board.printBoard();
         }
     }
 
