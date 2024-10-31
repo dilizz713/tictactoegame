@@ -54,23 +54,7 @@ public class BoardImpl implements Board{
 
     @Override
     public void printBoard() {
-        System.out.println("Current Board...");//display the board in the console. this is helpful for testing
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(pieces[i][j] == Piece.EMPTY ? " " : pieces[i][j] + " ");
-                if(j < 2){
-                    System.out.print(" | ");
-                }
 
-            }
-            System.out.println();
-            if(i < 2){
-                System.out.println("+---------+");
-            }
-
-
-        }
-        System.out.println();
     }
 
     public boolean isFull(){                            //check if all cells are filled.
