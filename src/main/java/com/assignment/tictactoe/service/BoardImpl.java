@@ -54,6 +54,18 @@ public class BoardImpl implements Board{
 
     @Override
     public void printBoard() {
+        System.out.println("Current Board:");
+        System.out.println("-------------");
+        for (int row = 0; row < pieces.length; row++) {
+            System.out.print("| ");
+            for (int col = 0; col < pieces[row].length; col++) {
+                Piece piece = pieces[row][col];
+                String pieceSymbol = piece == Piece.EMPTY ? " " : piece.toString();
+                System.out.print(pieceSymbol + " | ");
+            }
+            System.out.println();
+            System.out.println("-------------");
+        }
 
     }
 

@@ -43,6 +43,8 @@ public class BoardController implements BoardUI {
         Button clickedButton = (Button) event.getSource();
         String id = clickedButton.getId();
 
+
+        //Extract row and column from the button ID,( btn00 -> row = 0, col = 0)
         int row = Character.getNumericValue(id.charAt(3));
         int col = Character.getNumericValue(id.charAt(4));
 
