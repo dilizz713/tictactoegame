@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a0775b71-d052-42e8-83f6-60c5ecd950df" name="Changes" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/BoardImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Winner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/assignment/tictactoe/service/Winner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/board-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/view/board-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dilini/Desktop/oop/Main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dilini/Downloads/tictactoegame-master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -96,7 +94,10 @@
       <workItem from="1730193151777" duration="5999000" />
       <workItem from="1730256848689" duration="3214000" />
       <workItem from="1730334258621" duration="2259000" />
-      <workItem from="1730389213368" duration="2868000" />
+      <workItem from="1730389213368" duration="3441000" />
+      <workItem from="1730395198896" duration="678000" />
+      <workItem from="1730395930686" duration="255000" />
+      <workItem from="1730436813682" duration="662000" />
     </task>
     <task id="LOCAL-00001" summary="start the implements">
       <option name="closed" value="true" />
@@ -146,7 +147,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730389365806</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated">
+      <option name="closed" value="true" />
+      <created>1730394129235</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730394129235</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
